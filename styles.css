@@ -4,7 +4,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 30vh 70vh;
+  grid-template-rows: 1fr 2fr;
   background-image: url('comms.jpg');
   background-size: cover;
   background-position: center;
