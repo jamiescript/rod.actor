@@ -12,9 +12,7 @@ let actionRedact = function() {
   // redact original content
   redactList.forEach(function(redactWord) {
     redactOriginalList.forEach(function(originalWord, i) {
-      if (originalWord &&
-          redactWord.trim().toLowerCase() === originalWord.toLowerCase()
-         ) {
+      if ( originalWord && redactWord.trim().toLowerCase() === originalWord.toLowerCase() ) {
         redactOriginalList.splice(i, 1, redactedOutput);
       }
     });
@@ -22,6 +20,7 @@ let actionRedact = function() {
 
   // prepare and output redacted content
   let redactedText = redactOriginalList.join(' ');
+  redactedText = redactedText.replace(/█ █/g, '███');
 
   document.querySelector('.redacted-container textarea').innerText = redactedText;
 };
@@ -31,4 +30,3 @@ actionRedact();
 // TODO
 // comma seperated terms
 // one click copy redacted output
-// focus on redact input text
