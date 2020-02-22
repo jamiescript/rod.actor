@@ -27,6 +27,15 @@ header {
   margin-top: 0;
 }
 
+.heading span {
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
 label {
   text-shadow: 1px 1px 0 #000000;
   font-weight: bold;
