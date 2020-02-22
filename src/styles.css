@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Eurcntrc';
+  src: url('/fonts/eurcntrc.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/eurcntrc.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/eurcntrc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/eurcntrc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/eurcntrc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/eurcntrc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 30vh 70vh;
+  background-image: url('/src/comms.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: monospace, sans-serif;
+  font-size: 15px;
+  color: #f3f3f3;
+}
+
+header {
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 3px;
+  color: #f3f3f3;
+}
+
+.heading {
+  font-family: monospace, sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+label {
+  text-shadow: 1px 1px 0 #000000;
+  font-weight: bold;
+}
+
+input {
+  padding: 6px 1rem;
+  border-radius: 2px;
+  border: none;
+  width: 50%;
+  line-height: 2rem;
+}
+
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.textarea-container {
+  display: grid;
+  grid-template-rows: 1rem 1fr;
+}
+
+textarea {
+  background-color: rgba(255,255,255,0.5);
+  letter-spacing: -.5px;
+  border: none;
+  resize: none;
+  color: #222222;
+  border-radius: 3px;
+  padding: 1rem;
+  height: 60vh;
+  cursor: default;
+  size: letter;
+  font-size: 2rem;
+}
+
+input, textarea {
+  font-family: monospace, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
