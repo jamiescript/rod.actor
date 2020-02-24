@@ -29,16 +29,16 @@
 <body>
   <header>
     <p class="heading">Rod.acto<span>R</span></p>
-    <p>This tool will redact words found in your original text.</p>
+    <p>Paste the text you want redacted, into the textarea on the left. See the output in the textarea on the right.</p>
 
     <label>Words to redact:</label>
-    <input type="text" onkeyup="actionRedact()" spellcheck="false" autofocus value="text to" class="to-redact">
+    <input type="text" onkeyup="actionRedact()" spellcheck="false" autofocus value="redact" class="to-redact">
   </header>
 
   <div class="comparison-container">
     <div class="unredacted-container textarea-container">
       <label>Original text:</label>
-      <textarea spellcheck="false">Default text, to redact.</textarea>
+      <textarea spellcheck="false">Paste the text you want redacted in here...</textarea>
     </div>
 
     <div class="redacted-container textarea-container">
