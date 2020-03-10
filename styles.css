@@ -9,22 +9,29 @@ body {
   background-size: cover;
   background-position: center;
   font-family: monospace, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 2rem;
   color: #f3f3f3;
 }
 
 header {
   background-color: rgba(0,0,0,0.5);
-  padding: 1rem;
-  margin: 1rem;
+  padding: 2rem;
+  margin: 2rem;
   border-radius: 3px;
   color: #f3f3f3;
 }
 
+header p {
+  margin: 0;
+}
+
 .heading {
   font-family: monospace, sans-serif;
-  font-size: 2.5rem;
-  margin-top: 0;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .heading span {
@@ -37,43 +44,45 @@ header {
 }
 
 label {
+  line-height: 2rem;
   text-shadow: 1px 1px 0 #000000;
   font-weight: bold;
 }
 
 input {
-  padding: 6px 1rem;
+  padding: .5rem 1rem;
   border-radius: 2px;
   border: none;
-  width: 50%;
-  line-height: 2rem;
-  height: 2rem;
+  width: 60rem;
 }
 
 .comparison-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  margin: 1rem;
+  grid-gap: 2rem;
+  margin: 0 2rem;
+}
+
+.comparison-container label {
+  margin-left: 2rem;
 }
 
 .textarea-container {
   display: grid;
-  grid-template-rows: 1rem 1fr;
+  grid-template-rows: 2rem 1fr;
 }
 
 textarea {
   background-color: rgba(255,255,255,0.5);
-  letter-spacing: -.5px;
+  letter-spacing: -.2rem;
   border: none;
   resize: none;
   color: #222222;
   border-radius: 3px;
-  padding: 1rem;
-  height: 60vh;
+  padding: 2rem;
   cursor: default;
-  size: letter;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 input, textarea {
