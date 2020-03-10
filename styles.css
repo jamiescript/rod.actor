@@ -6,7 +6,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 2fr;
   background-image: url('comms.jpg');
-  background-size: cover;
+  background-size: content;
   background-position: center;
   font-family: monospace, sans-serif;
   font-size: 16px;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(44,29,32,0.85);
   padding: 2rem;
   margin: 2rem;
   border-radius: 1rem;
@@ -73,7 +73,7 @@ input {
 }
 
 textarea {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(208,194,189,0.85);
   letter-spacing: -.2rem;
   border: none;
   resize: none;
